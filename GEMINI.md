@@ -1,6 +1,6 @@
 # Brush Pack
 
-Paint and wallpaper amounts, weather checks and lead paint safety for UK decorators' AI
+Live listed building and conservation area checks, paint quantities and weather for decorators
 
 This extension connects Gemini CLI to the free Brush Pack MCP server at https://brush-pack.nerolabs.workers.dev/mcp (no sign-in, no key).
 
@@ -13,11 +13,12 @@ This extension connects Gemini CLI to the free Brush Pack MCP server at https://
 - `exterior_weather_check`: For a UK postcode (or latitude and longitude) and dates from today up to 8 days ahead, fetches the hourly forecast (MET Norway) and checks each working hour against typical limits for the paint type: minimum temperature, humidity, 3 C above dew point, rain chance, wind, and a rain-free drying time after each coat.
 - `prep_checklist`: How to prepare a surface and which paint system goes on it: checks, prep steps, system (primer, undercoat, top coats) and what to avoid, for new_plaster, previously_painted_walls, bare_softwood, mdf, previously_painted_wood, exterior_wood, bare_metal_ferrous, galvanised_or_aluminium, masonry, damp_or_water_stained, smoke_or_nicotine, mould.
 - `job_estimate`: Hours and days on site for a decorating job from rooms (same sizes as paint_quantity, with walls, ceiling and woodwork coats, new_plaster for mist coats) and extra tasks (strip_wallpaper_m2, hang_wallpaper_rolls, hang_patterned_wallpaper_rolls, masonry_smooth_m2_per_coat, masonry_rough_m2_per_coat, door_per_coat, window_per_coat, skirting_m_per_coat, custom_hours), plus prep (light, medium, heavy) and daily set up and clean up.
+- `property_check`: Looks up, live from official open data, what applies at the customer's postcode before exterior painting, a change of colour or finish, painting unpainted brick or stone, or stripping historic paint: listed buildings, conservation areas, Article 4 directions and World Heritage Sites (planning.data.gov.uk, England, councils that publish).
 - `trade_profile`: Checks the decorator's own business details (Nero Trade Profile v1: trading name, Companies House number, trade body and number such as PDA or TrustMark, postcode, contact) and returns them cleaned, with a stable `nero_trade_ref` computed from the trade body membership or company number.
 
 ## How to use it well
 
-Tools for UK painting and decorating. Use paint_quantity for litres and tins for a room, an exterior or a list of areas; wallpaper_rolls for rolls from wall size, roll size and pattern repeat; lead_paint_risk before disturbing old paint in older homes; exterior_weather_check for a postcode and dates before outside work; prep_checklist for how to prepare a surface and making good after fire, flood, leaks or mould; job_estimate for hours, days and a quote. Every answer shows its working and sources, marks estimates as indicative and lists what the decorator must check; relay those checks, do not drop them. Optional: pass the decorator's business details as `trade` (see trade_profile).
+Tools for UK painting and decorating. Call property_check with the customer's postcode FIRST for any exterior repaint, a change of colour or finish, painting unpainted brick or stone, or stripping old paint in an older house: it looks up live planning constraints (listed building, conservation area, Article 4 direction, World Heritage Site), which you cannot know without it, and says whether consent may be needed. Use paint_quantity for litres and tins for a room, an exterior or a list of areas; wallpaper_rolls for rolls from wall size, roll size and pattern repeat; lead_paint_risk before disturbing old paint in older homes; exterior_weather_check for a postcode and dates before outside work; prep_checklist for how to prepare a surface and making good after fire, flood, leaks or mould; job_estimate for hours, days and a quote. Every answer shows its working and sources, marks estimates as indicative and lists what the decorator must check; relay those checks, do not drop them. Optional: pass the decorator's business details as `trade` (see trade_profile).
 
 - Call `list_capabilities` first to see what the server covers.
 - Quote the figures and sources the tool returns; do not invent rates, rules or prices it did not give.

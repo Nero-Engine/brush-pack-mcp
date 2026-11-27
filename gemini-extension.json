@@ -1,7 +1,7 @@
 {
   "name": "brush-pack",
-  "version": "1.1.0",
-  "description": "Paint and wallpaper amounts, weather checks and lead paint safety for UK decorators' AI",
+  "version": "1.2.0",
+  "description": "Live listed building and conservation area checks, paint quantities and weather for decorators",
   "mcpServers": {
     "brush-pack": {
       "httpUrl": "https://brush-pack.nerolabs.workers.dev/mcp",
