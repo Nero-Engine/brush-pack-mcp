@@ -1,5 +1,7 @@
 # Brush Pack
 
+[![Brush Pack MCP connector](https://glama.ai/mcp/connectors/io.github.Nero-Engine/brush-pack/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.Nero-Engine/brush-pack)
+
 Free tools a UK painter and decorator's AI assistant uses on the job: paint litres and tins, wallpaper rolls, lead paint safe working, an exterior weather and drying check by postcode, prep checklists and job time estimates.
 
 **Endpoint:** `https://brush-pack.nerolabs.workers.dev/mcp` (MCP, Streamable HTTP)
