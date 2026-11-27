@@ -1,0 +1,12 @@
+{
+  "name": "brush-pack",
+  "version": "1.1.0",
+  "description": "Paint and wallpaper amounts, weather checks and lead paint safety for UK decorators' AI",
+  "mcpServers": {
+    "brush-pack": {
+      "httpUrl": "https://brush-pack.nerolabs.workers.dev/mcp",
+      "timeout": 30000
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

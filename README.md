@@ -28,6 +28,7 @@ Every tool carries a plain title and the read-only, destructive and open-world h
 - **Claude (web or desktop):** Settings, Connectors, Add custom connector, paste the endpoint.
 - **ChatGPT:** Settings, Apps and connectors, Advanced settings, switch on Developer mode, then Create, paste the endpoint, No authentication.
 - **Claude Code:** `claude mcp add --transport http brush-pack https://brush-pack.nerolabs.workers.dev/mcp`
+- **Gemini CLI:** `gemini extensions install https://github.com/Nero-Engine/brush-pack-mcp`
 - **Cursor, VS Code, Windsurf and others:**
 
 ```json
