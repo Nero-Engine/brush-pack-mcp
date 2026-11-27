@@ -17,6 +17,6 @@ Add this to the MCP settings file (in Cline: MCP Servers, Configure, then cline_
 }
 ```
 
-Save the file. The server's tools appear straight away. To check it works, ask for the server's capabilities (the `list_capabilities` tool).
+Save the file. The server's tools appear straight away. To check it works, ask the assistant to list the server's tools.
 
 Docs: https://brush-pack.nerolabs.workers.dev/docs
